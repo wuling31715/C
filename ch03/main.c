@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int main(void)
 {
    
-
    int L2 = sizeof(2L);
    printf("sizeof(2L)=%d\n", L2);
    
