@@ -9,6 +9,7 @@ int main()
     int array[n];
     char str[n * 20];
     fgets(str, sizeof(str), stdin);
+    
     char *delim = " (/`A`)/ ~I__I ";
     char *token;
     token = strtok(str, delim);
@@ -18,11 +19,6 @@ int main()
         token = strtok(NULL, delim);
         i++;
     }
-    // int size_of_array = sizeof(array) / sizeof(array[0]);
-    // for (int i = 0; i < n; i++)
-    // {
-    //     printf("%d\n", array[i]);
-    // }
 
     int prefix_sum[n];
     prefix_sum[0] = array[0];
@@ -30,10 +26,7 @@ int main()
     {
         prefix_sum[i] = array[i] + prefix_sum[i - 1];
     }
-    // for (int i = 0; i < n; i++)
-    // {
-    //     printf("%d\n", prefix_sum[i]);
-    // }
+
     for (int i = 0; i < q; i++)
     {
         int l, r, sum;
