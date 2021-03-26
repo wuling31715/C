@@ -6,7 +6,8 @@ int main()
     scanf("%d %d\n", &n, &q);
 
     int array[n];
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         scanf("%d(/`A`)/ ~I__I", &array[i]);
     }
 
